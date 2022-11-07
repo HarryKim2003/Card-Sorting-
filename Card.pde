@@ -26,7 +26,7 @@ class Card {
   void plainDraw(int a) {    
     this.image.resize(int(xValue), int(yValue));
     
-    if(choiceSwap.equals("selectionSort")) //This is really sad but ;-; I couldn't figure out the selectionSort animation L. :(((
+    if(choiceSwap.equals("selectionSort")) 
       this.xCoor = (padding *(a+1))+ xValue * a;
 
     image(this.image, this.xCoor, this.yCoor);
@@ -102,12 +102,10 @@ class Card {
 
 
   //Helper function I initialy used to test out my algorithms. No longer works due to various additions ;(. 
-  //Kept for nostalgic purposes. 
   void plainSwap(Card b) {
-    //This function's real name is Larry. 
-    float temporarry = b.xCoor;
+   float temporarry = b.xCoor;
     b.xCoor = this.xCoor;
     this.xCoor = temporarry;
-    //Thank you for your service, Larry.
+
   }
 }
